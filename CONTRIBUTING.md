@@ -12,14 +12,20 @@ community build applications and use free, public APIs quickly and easily. Pull 
 
 Current API entry format:
 
-| API | Description | Auth | HTTPS | CORS | Call this API |
-| --- | --- | --- | --- | --- | --- |
-| API Title(Link to API documentation) | Description of API | Does this API require authentication? * | Does the API support HTTPS? | Does the API support [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)? * | [Does this API have a public Postman Collection?](https://learning.postman.com/docs/publishing-your-api/run-in-postman/creating-run-button/) | 
+| API | Description | Auth | HTTPS | CORS | Call this API | Get API Key |
+| --- | --- | --- | --- | --- | --- | --- |
+| API Title(Link to API documentation) | Description of API | Does this API require authentication? * | Does the API support HTTPS? | Does the API support [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)? * | [Does this API have a public Postman Collection?](https://learning.postman.com/docs/publishing-your-api/run-in-postman/creating-run-button/) | Link to API key registration (if applicable) |
 
 Example entry:
 
 ```
-| [NASA](https://api.nasa.gov) | NASA data, including imagery | No | Yes | Yes | [Run in Postman Button]
+| [NASA](https://api.nasa.gov) | NASA data, including imagery | No | Yes | Yes | [Run in Postman Button] | |
+```
+
+Example entry with API Key link:
+
+```
+| [OpenWeatherMap](https://openweathermap.org/api) | Weather data | `apiKey` | Yes | Yes | | [Get API Key](https://openweathermap.org/api) |
 ```
 
 \* Currently, the only accepted inputs for the `Auth` field are as follows:
